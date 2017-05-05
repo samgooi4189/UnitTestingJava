@@ -6,6 +6,5 @@ sudo cp ./junit-4.10.jar /usr/bin/
 rm ./junit-4.10.jar
 
 # set environment variables for junit
-echo 'JUNIT_HOME="/usr/local"' >> ~/.profile
-echo 'CLASSPATH="$CLASSPATH:$JUNIT_HOME/junit-4.10.jar"' >> ~/.profile
-source ~/.profile
+export JUNIT_HOME="/usr/local"
+export CLASSPATH="$CLASSPATH:$JUNIT_HOME/junit-4.10.jar"
